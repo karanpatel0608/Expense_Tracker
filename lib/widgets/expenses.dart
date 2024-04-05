@@ -30,6 +30,7 @@ class _ExpensesState extends State<Expenses> {
   void _openAddExpenseOverlay() {
     //..........showModalBottomSheet() is a method that is provided by flutter to show a modal bottom sheet
     showModalBottomSheet(
+        useSafeArea: true,
         context: context,
         isScrollControlled: true,
         builder: (ctx) => NewExpense(
